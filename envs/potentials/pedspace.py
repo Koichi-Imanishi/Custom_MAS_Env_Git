@@ -10,7 +10,7 @@ class PedSpacePotential(torch.nn.Module):
     r is in m
     """
 
-    def __init__(self, space, u0=10, r=0.2):
+    def __init__(self, space, u0=10, r=0.1):
         super().__init__()
         self.space = space or []
         self.u0 = u0

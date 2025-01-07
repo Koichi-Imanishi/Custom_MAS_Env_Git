@@ -1,2 +1,4 @@
-#{"t_start": 1735821472.784522, "env_id": "None"}
-r,l,t,action,action_ratio(0)
+#{"t_start": 1736063095.4121375, "env_id": "None"}
+r,l,t,action,left_people_num,center_people_num,right_people_num
+0.0,3,217.534785,"[2, 0, 2]",0,0,0
+0.0,3,433.737919,"[2, 0, 1]",0,0,0

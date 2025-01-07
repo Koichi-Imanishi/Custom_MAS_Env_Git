@@ -212,10 +212,11 @@ class LeapfrogIntegrator:
         # update waypoints
         for i in range(len(new_state)):
             if stateutils.calc_distance_1(self.destinations[i], new_state[i]) < 0.05:
-                if len(self.dest_queues[i]) > 0:
+                if len(self.dest_queues[i]) > 1:
                     self.destinations[i] = self.dest_queues[i].popleft()
 
-                else:
+                elif len(self.dest_queues[i]) == 1:
+                    self.destinations[i] = self.dest_queues[i].popleft()
                     self.on_calc[i] = 0
 
         # update destination
